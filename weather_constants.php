@@ -1,0 +1,71 @@
+<?php
+//Metadata
+define("DATE", "0");
+define("TIME", "1");
+define("CUMULUS_VERSION", "38");
+define("CUMULUS_BUILD_NUMBER", "39");
+define("LOST_CONNECTION", "50");
+define("FORECAST", "48");
+//Wind data
+define("WIND_AVERAGE_SPEED", "5");
+define("WIND_LAST_READ", "6");
+define("WIND_DIRECTION_DEG", "7");
+define("WIND_DIRECTION_COMPASS", "11");
+define("WIND_BEAUFORT", "12");
+define("WIND_UNIT", "13");
+define("WIND_RUN", "17");
+define("WIND_CHILL", "24");
+define("WIND_MAX", "30");
+define("TIME_WIND_MAX", "31");
+define("GUST_MAX", "32");
+define("TIME_GUST_MAX", "33");
+define("WIND_GUST", "40");
+define("WIND_10M_AVERAGE_DIRECTION_DEG", "46");
+define("WIND_AVERAGE_DIRECTION_COMPASS", "51");
+//Temperature data
+define("TEMP_OUT", "2");
+define("DEWPOINT", "4");
+define("TEMP_UNIT", "14");
+define("TEMP_IN", "22");
+define("TEMP_TREND", "25");
+define("TEMP_MAX", "26");
+define("TIME_TEMP_MAX", "27");
+define("TEMP_MIN", "28");
+define("TIME_TEMP_MIN", "29");
+define("TEMP_APPARENT", "54");
+//Humidity data
+define("HUM_REL", "3");
+define("HUM_IN", "23");
+define("HUMIDEX", "42");
+//Pressure data
+define("PRESS", "10");
+define("PRESS_UNIT", "15");
+define("PRESS_TREND", "18");
+define("PRESS_MAX", "34");
+define("TIME_PRESS_MAX", "35");
+define("PRESS_MIN", "36");
+define("TIME_PRESS_MIN", "37");
+//Rain data
+define("RAIN_CURRENT_RATE", "8");
+define("RAIN_TODAY", "9");
+define("RAIN_UNIT", "16");
+define("RAIN_MONTH", "19");
+define("RAIN_YEAR", "20");
+define("RAIN_YESTERDAY", "21");
+define("RAIN_LAST_HOUR", "47");
+//Solar data
+define("HEAT_INDEX", "41");
+define("UV", "43");
+define("EV", "44");
+define("SOLAR_RADIATION", "45");
+define("DAYLIGHT", "49");
+define("SUN_HOURS", "55");
+define("SOLAR_CURRENT_MAX_RADIATION", "56");
+define("SHINING", "57");
+//Cloud data
+define("CLOUD_BASE", "52");
+define("CLOUD_BASE_UNIT", "53");
+
+header('HTTP/1.0 404 Not Found', true, 404);
+
+?>
