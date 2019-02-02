@@ -6,25 +6,30 @@
   $rawData = fread($file, filesize($filename));
   fclose($file);
   $splitted = explode(" ", $rawData);
+
+  if(isset($_GET["time"]))  { echo $splitted[DATE] . " " . $splitted[TIME]; exit(); }
 ?>
 
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="drw0if">
+    <meta name="description" content="Weather station from Aerotre Manduria">
+    <meta name="keywords" content="weather, weather station, aerotre, manduria, meteo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Aerotre - Meteo</title>
   </head>
 
-  <body class="night">
+  <body>
 
     <div class="container">
       <header class="container__header">
-        <center>Place</center>
+        <center>Aerotre Manduria</center>
       </header>
 
 <!-- Wind row -->
@@ -157,6 +162,6 @@
 
     </div>
 
-    <div class="bg-night"></div>
+    <div class="bg <?php echo "manz"; ?>"></div>
   </body>
 </html>
